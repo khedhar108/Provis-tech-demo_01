@@ -4,7 +4,7 @@ import { Container, Navbar as BootstrapNavbar, Nav, Button } from "react-bootstr
 function Header() {
   return (
     <BootstrapNavbar bg="light" expand="lg">
-      <Container fluid className=" ">
+      <Container fluid className="d-flex justify-content-around">
         <BootstrapNavbar.Brand className="ms-lg-5" href="#">
           Ship<span style={{ color: "red" }}>Up</span>
         </BootstrapNavbar.Brand>

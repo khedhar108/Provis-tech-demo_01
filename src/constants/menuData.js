@@ -17,11 +17,7 @@ const menuItems = [
         icon: LuUserPlus2,
         path: "/company/about",
       },
-      {
-        id: 2,
-        title: "Services",
-        path: "/services",
-      },
+     
 
       {
         id: 4,
@@ -57,7 +53,7 @@ const menuItems = [
   },
   {
     id: 9,
-    title: "News",
+    title: "News and Media",
     path: "/news-and-media",
   },
 ];
