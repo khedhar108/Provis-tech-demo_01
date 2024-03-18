@@ -4,7 +4,7 @@ import { Container, Navbar as BootstrapNavbar, Nav, Button } from "react-bootstr
 function Header() {
   return (
     <BootstrapNavbar bg="light" expand="lg">
-      <Container fluid className="d-flex justify-content-around">
+      <Container  className="d-flex justify-content-around">
         <BootstrapNavbar.Brand className="ms-lg-5" href="#">
           Ship<span style={{ color: "red" }}>Up</span>
         </BootstrapNavbar.Brand>
@@ -12,7 +12,7 @@ function Header() {
         <BootstrapNavbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
             {/* Navbar at center */}
-            <Navbar />
+            <Navbar  />
           </Nav>
           <Nav className="gap-2 d-flex me-5">
             <Button variant="outline-primary">Request Quote</Button>

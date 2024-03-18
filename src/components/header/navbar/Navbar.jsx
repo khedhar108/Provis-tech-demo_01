@@ -11,7 +11,7 @@ function Navbar() {
             <Nav.Link
               as={NavLink}
               to={item.path}
-              className="text-red-600 "
+              className=" "
               activeClassName="active"
             >
               {item.title}
@@ -19,7 +19,7 @@ function Navbar() {
           ) : (
             <NavDropdown title={item.title} id={`nav-dropdown-${item.id}`}
             >
-              <div className=" d-flex flex-column flex-md-row bg-danger-subtle  dropdown-class ">
+              <div className=" d-flex flex-column flex-md-row ">
                 <div className="d-flex flex-column gap-2 container-fluid ">
                   <h3>Company</h3>
                   {item.subMenu.map((subItem) => (
