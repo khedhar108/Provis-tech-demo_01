@@ -1,7 +1,6 @@
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { FaGooglePlus } from "react-icons/fa";
 
-
 function Footer() {
   const links = [
     {
@@ -33,8 +32,22 @@ function Footer() {
     },
   ];
 
+  const socialMediaLinks = [
+    {
+      icon: <RiFacebookCircleFill />,
+      href: "#",
+    },
+    {
+      icon: <FaGooglePlus />,
+      href: "#",
+    },
+  ];
+
   return (
-    <footer className="py-4 mt-8 bg-blue-800 container-fluid text-light">
+    <footer
+      className="text-white mt-5 container-fluid mb-0   "
+      style={{ backgroundColor: "#11217f" }}
+    >
       <div className="row">
         <div className="col-12 col-md-6 col-lg-3">
           <h5 className="mb-2 text-center display-5 text-md-start">
@@ -50,7 +63,9 @@ function Footer() {
           <h5 className="mb-2 text-center display-5 text-md-start">Explore</h5>
           {links.map((link) => (
             <p key={link.href}>
-              <a href={link.href}>{link.title}</a>
+              <a href={link.href} className="text-white text-decoration-none ">
+                {link.title}
+              </a>
             </p>
           ))}
         </div>
@@ -59,7 +74,9 @@ function Footer() {
           <h5 className="mb-2 text-center display-5 text-md-start">Legal</h5>
           {legalLinks.map((link) => (
             <p key={link.href}>
-              <a href={link.href}>{link.title}</a>
+              <a href={link.href} className="text-white text-decoration-none ">
+                {link.title}
+              </a>
             </p>
           ))}
         </div>
@@ -69,20 +86,16 @@ function Footer() {
             Social Media
           </h5>
           <div className="flex-row gap-4 d-flex social-media-links">
-            <div className="w-4 h-4 social-media-link">
-              <a href="#">
-                <span className="social-media-icon">
-                  <RiFacebookCircleFill />
-                </span>
-              </a>
-            </div>
-            <div className="w-4 h-4 social-media-link">
-              <a href="#">
-                <span className="social-media-icon">
-                  <FaGooglePlus />
-                </span>
-              </a>
-            </div>
+            {socialMediaLinks.map((link) => (
+              <div
+                key={link.href}
+                className="social-media-link bg-white rounded-circle p-2"
+              >
+                <a href={link.href}>
+                  <span className="social-media-icon ">{link.icon}</span>
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
