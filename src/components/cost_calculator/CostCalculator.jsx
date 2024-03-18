@@ -24,7 +24,7 @@ const parameters = [
     icon: <GiWeight />,
   },
 ];
-
+//! https://github.com/twbs/bootstrap/issues/32548 -fiedset and legend issue with bootstrap 5
 function CostCalculator() {
   return (
     <form className="container d-flex flex-column flex-md-row justify-content-around gap-4 mt-4 shadow-lg p-3  rounded-4">

@@ -1,6 +1,6 @@
 import { LuVideo } from "react-icons/lu";
 import { VideoPopup } from "./VideoPopup";
-
+import CircleEffect from "./circle_effect/CircleEffect";
 
 function HeroLayout() {
   return (
@@ -8,10 +8,11 @@ function HeroLayout() {
       <div className="container-fluid">
         <div className="row align-items-center ">
           <div className="col-md-12 ">
-            <div className="card animate__animated animate__zoomIn">
+            <div className="card animate__animated animate__zoomIn position-relative z-1">
+              <CircleEffect />
               <div className="row g-0 h-100">
                 <div className="col-md-6 d-flex flex-column justify-content-center">
-                  <div className="card-body">
+                  <div className="card-body rounded-circle rounded-end-0 ">
                     <div className="d-flex flex-column h-100 justify-content-center">
                       <h5 className="card-title display-4 animate__animated animate__fadeInLeft">
                         Quick & reliable{" "}

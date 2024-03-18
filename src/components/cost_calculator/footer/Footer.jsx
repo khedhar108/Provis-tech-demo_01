@@ -45,7 +45,7 @@ function Footer() {
 
   return (
     <footer
-      className="text-white mt-5 container-fluid mb-0   "
+      className="text-white mt-5 container-fluid mb-0 position-absolute  "
       style={{ backgroundColor: "#11217f" }}
     >
       <div className="row">
