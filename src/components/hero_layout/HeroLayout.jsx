@@ -4,10 +4,10 @@ import { VideoPopup } from "./VideoPopup";
 
 function HeroLayout() {
   return (
-    <div className="mx-8 mt-20 animate__animated animate__fadeIn">
+    <div className=" mt-20 animate__animated animate__fadeIn">
       <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-md-12 d-flex">
+        <div className="row align-items-center ">
+          <div className="col-md-12 ">
             <div className="card animate__animated animate__zoomIn">
               <div className="row g-0 h-100">
                 <div className="col-md-6 d-flex flex-column justify-content-center">

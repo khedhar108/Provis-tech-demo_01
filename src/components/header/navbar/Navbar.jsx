@@ -4,7 +4,7 @@ import { Nav, NavDropdown } from "react-bootstrap";
 
 function Navbar() {
   return (
-    <Nav>
+    <Nav >
       {menuItems?.map((item) => (
         <Nav.Item key={item.id}>
           {!item.subMenu ? (
@@ -18,7 +18,7 @@ function Navbar() {
             </Nav.Link>
           ) : (
             <NavDropdown title={item.title} id={`nav-dropdown-${item.id}`}
-            className=" ">
+            >
               <div className=" d-flex flex-column flex-md-row bg-danger-subtle  dropdown-class ">
                 <div className="d-flex flex-column gap-2 container-fluid ">
                   <h3>Company</h3>
