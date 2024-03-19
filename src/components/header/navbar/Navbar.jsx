@@ -17,7 +17,11 @@ function Navbar() {
               {item.title}
             </Nav.Link>
           ) : (
-            <NavDropdown title={item.title} id={`nav-dropdown-${item.id} `} className="container">
+            <NavDropdown
+              title={item.title}
+              id={`nav-dropdown-${item.id} `}
+              className=""
+            >
               <div className=" d-flex flex-column flex-md-row ">
                 <div className="d-flex flex-column gap-2  ">
                   <h3>Company</h3>

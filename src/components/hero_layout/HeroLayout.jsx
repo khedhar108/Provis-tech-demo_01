@@ -1,6 +1,6 @@
 import { IoMdVideocam } from "react-icons/io";
 import { VideoPopup } from "./VideoPopup";
-import CircleEffect from "./circle_effect/CircleEffect";
+// import CircleEffect from "./circle_effect/CircleEffect";
 
 function HeroLayout() {
   return (
