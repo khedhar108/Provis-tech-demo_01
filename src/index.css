@@ -1,3 +1,29 @@
 .active{
     color: red;
 }
+
+
+.customBtn {
+    background: #2C2D5B;
+    color: white;   
+    &:hover{
+        background-color: #7172c4;
+        color: white;
+    }
+  }
+
+  .bg-white{
+    background-color: #ffffff;
+  }
+
+  .bold{
+    font-weight: 500;
+  }
+
+.bg-icon{
+  background: #2C2D5B;
+}
+  .bg-footer{
+    background-color:  #2C2D5B;
+    ;
+  }

@@ -23,7 +23,7 @@ const VideoPopup = () => {
 
   return (
     <div className="z-50">
-      <button onClick={openModal} className="btn btn-outline-light text-dark">
+      <button onClick={openModal} className="btn fw-bold text-dark">
         Play Demo
       </button>
       <Modal

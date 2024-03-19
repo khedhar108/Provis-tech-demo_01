@@ -1,4 +1,4 @@
-import { LuVideo } from "react-icons/lu";
+import { IoMdVideocam } from "react-icons/io";
 import { VideoPopup } from "./VideoPopup";
 import CircleEffect from "./circle_effect/CircleEffect";
 
@@ -8,16 +8,16 @@ function HeroLayout() {
       <div className="container-fluid">
         <div className="row align-items-center ">
           <div className="col-md-12 ">
-            <div className="card animate__animated animate__zoomIn position-relative z-1">
-              <CircleEffect />
+            <div className=" m-5 animate__animated animate__zoomIn position-relative z-1">
+              {/* <CircleEffect /> */}
               <div className="row g-0 h-100">
                 <div className="col-md-6 d-flex flex-column justify-content-center">
                   <div className="card-body rounded-circle rounded-end-0 ">
                     <div className="d-flex flex-column h-100 justify-content-center">
-                      <h5 className="card-title display-4 animate__animated animate__fadeInLeft">
+                      <h5 className="card-title display-5 fw-semibold animate__animated animate__fadeInLeft">
                         Quick & reliable{" "}
-                        <span className="text-danger">
-                          WareHousing and Logistic
+                        <span className="text-danger fw-bold display-4 ">
+                          Warehousing and Logistic
                         </span>{" "}
                         solutions
                       </h5>
@@ -27,12 +27,12 @@ function HeroLayout() {
                         time.
                       </p>
                       <div className="d-flex gap-4 mx-3 mt-4 mb-1">
-                        <button className="btn btn-primary animate__animated animate__fadeInUp">
+                        <button className="btn customBtn  animate__animated animate__fadeInUp">
                           Join Now
                         </button>
-                        <button className=" d-flex btn btn-outline-light align-items-center gap-2  animate__animated animate__fadeInDown">
-                          <div className=" border rounded-circle d-flex align-items-center justify-content-center p-2 bg-body-tertiary text-primary">
-                            <LuVideo />
+                        <button className=" d-flex btn align-items-center gap-2  animate__animated animate__fadeInDown">
+                          <div className=" border rounded-circle d-flex align-items-center justify-content-center p-2  shadow ">
+                            <IoMdVideocam  />
                           </div>
                           {/* PopUp Video activating by this button */}
                           <VideoPopup />
