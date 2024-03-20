@@ -26,7 +26,7 @@ function HeroLayout() {
                         inventory and deliver your products to your customers on
                         time.
                       </p>
-                      <div className="d-flex gap-4 mx-3 mt-4 mb-1">
+                      <div className="d-flex gap-4 mx-3 mt-4 mb-1 container ">
                         <button className="btn customBtn  animate__animated animate__fadeInUp">
                           Join Now
                         </button>

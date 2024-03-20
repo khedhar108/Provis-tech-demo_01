@@ -1,3 +1,26 @@
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: #ffffff;
+  border: none;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .megamenu .dropdown-menu {
+    position: static;
+    transform: none;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+  }
+}
+/* ---------------custom styling to override bootstrap design---------------------------- */
+
 .active{
     color: red;
 }
@@ -27,3 +50,10 @@
     background-color:  #2C2D5B;
     ;
   }
+
+
+  @media (350px < width< 480) {
+    .drop-menu{
+        max-width: 300px;
+    }
+}
