@@ -16,8 +16,8 @@ function HeroLayout() {
                   <div className="card-body rounded-circle rounded-end-0 ">
                     <div className="d-flex flex-column h-100 justify-content-center position-relative">
                       {/* truck svg */}
-                      <CiDeliveryTruck className="truck d-none d-lg-block " />
-                      <GiAirplaneDeparture className="plane d-none d-lg-block  " />
+                      <CiDeliveryTruck className="truck d-none d-xxl-none d-lg-block " />
+                      <GiAirplaneDeparture className="plane d-none d-lg-block d-xxl-none " />
 
                       <h5 className="card-title display-5 fw-semibold animate__animated animate__fadeInLeft ">
                         Quick & reliable{" "}

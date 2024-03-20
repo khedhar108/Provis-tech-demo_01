@@ -74,7 +74,7 @@ function Navbar() {
                                   to={subItem.path}
                                 >
                                   {/* changing dropdown layout according width */}
-                                  {windowWidth > 991 ? (
+                                  {windowWidth > 482 ? (
                                     <div className="d-flex align-items-center">
                                       <div className="border rounded-circle d-flex align-items-center justify-content-center p-1 text-danger">
                                         {subItem.icon && <subItem.icon />}
