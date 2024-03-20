@@ -1,7 +1,9 @@
-import{links,legalLinks,socialMediaLinks} from '../../../constants/footerData';
+import {
+  links,
+  legalLinks,
+  socialMediaLinks,
+} from "../../constants/footerData";
 function Footer() {
-
-
   return (
     <footer className="text-white mt-5 container-fluid mb-0 position-absolute bg-footer">
       <div className="row  justify-content-around m-4">

@@ -35,6 +35,7 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-md-5 mb-2 mb-lg-0">
+              {/*conditional Rendering */}
               {menuItems?.map((item) => (
                 <li key={item.id} className="nav-item">
                   {!item.subMenu ? (
@@ -72,6 +73,7 @@ function Navbar() {
                                   className="dropdown-item"
                                   to={subItem.path}
                                 >
+                                  {/* changing dropdown layout according width */}
                                   {windowWidth > 991 ? (
                                     <div className="d-flex align-items-center">
                                       <div className="border rounded-circle d-flex align-items-center justify-content-center p-1 text-danger">
@@ -84,35 +86,12 @@ function Navbar() {
                                     </div>
                                   ) : (
                                     <div>{subItem.title}</div>
-
-                                    /**
-                                    <li>
-                          <hr className="dropdown-divider" />
-                        </li>
-
-                        <li>
-                          <h6 className="dropdown-header">NewsRoom</h6>
-                        </li>
-
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            <img
-                              src="https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&w=600"
-                              alt="News"
-                              height="60"
-                              className="rounded me-2"
-                            />
-                            Some News
-                          </a>
-                        </li>
-                            
-                         */
                                   )}
                                 </NavLink>
                               </li>
                             ))}
                           </div>
-                          <div className="dropdwon-right d-none d-md-flex  flex-column gap-2  w-sm-100 container ">
+                          <div className="dropdown-right d-none d-md-flex  flex-column gap-2  w-sm-100 container ">
                             <h2>NewsRoom</h2>
                             <div className="mt-4">
                               <img

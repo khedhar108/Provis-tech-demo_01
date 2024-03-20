@@ -17,7 +17,6 @@ const menuItems = [
         icon: LuUserPlus2,
         path: "/company/about",
       },
-     
 
       {
         id: 4,
