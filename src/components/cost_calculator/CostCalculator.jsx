@@ -10,7 +10,7 @@ function CostCalculator() {
           </legend>
           {/* <label className="form-label" htmlFor={param.Legend} /> */}
           <div className="input-group pb-2">
-            <span className="input-group-text  border-light">{param.icon}</span>
+            <span className="input-group-text  border-light">{<param.icon/>}</span>
             <input
               type="text"
               className="form-control  border-light "
